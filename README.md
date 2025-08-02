@@ -2,7 +2,7 @@
 # Steero – iPhone Steering Wheel for Mac Games
 
 ## Overview
-Revora turns your **iPhone** into a **wireless steering wheel** for Mac racing games.  
+Steero turns your **iPhone** into a **wireless steering wheel** for Mac racing games.  
 Using the phone’s gyroscope and Bluetooth Low Energy (BLE), it transmits your steering and control inputs directly to a Mac app that integrates with games via a **virtual steering device**.
 
 ### Features
