@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		968CA2882E3EA470001B4ABF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 968CA2852E3EA470001B4ABF /* Info.plist */; };
+		968CA28A2E3EA470001B4ABF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2842E3EA470001B4ABF /* ContentView.swift */; };
+		968CA28B2E3EA470001B4ABF /* Steero_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2872E3EA470001B4ABF /* Steero_iOSApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		961572002E3E9D7500125E6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +33,16 @@
 		961571F12E3E9D7300125E6F /* Steero-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Steero-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		961571FF2E3E9D7500125E6F /* Steero-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steero-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		961572092E3E9D7500125E6F /* Steero-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steero-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		968CA2842E3EA470001B4ABF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		968CA2852E3EA470001B4ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968CA2862E3EA470001B4ABF /* Steero_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steero_iOS.entitlements; sourceTree = "<group>"; };
+		968CA2872E3EA470001B4ABF /* Steero_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steero_iOSApp.swift; sourceTree = "<group>"; };
+		968CA2972E3EA5EF001B4ABF /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		968CA2982E3EA679001B4ABF /* ControlPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPacket.swift; sourceTree = "<group>"; };
+		968CA2992E3EA693001B4ABF /* BLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheral.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		961571F32E3E9D7300125E6F /* Steero-iOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Steero-iOS";
-			sourceTree = "<group>";
-		};
 		961572022E3E9D7500125E6F /* Steero-iOSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Steero-iOSTests";
@@ -75,9 +83,14 @@
 		961571E82E3E9D7300125E6F = {
 			isa = PBXGroup;
 			children = (
-				961571F32E3E9D7300125E6F /* Steero-iOS */,
-				961572022E3E9D7500125E6F /* Steero-iOSTests */,
-				9615720C2E3E9D7500125E6F /* Steero-iOSUITests */,
+				968CA2872E3EA470001B4ABF /* Steero_iOSApp.swift */,
+				968CA2862E3EA470001B4ABF /* Steero_iOS.entitlements */,
+				968CA2852E3EA470001B4ABF /* Info.plist */,
+				968CA2952E3EA4DA001B4ABF /* Views */,
+				968CA2942E3EA4D5001B4ABF /* Models */,
+				968CA2932E3EA4CD001B4ABF /* BLE */,
+				968CA2922E3EA491001B4ABF /* Motion */,
+				968CA2962E3EA53F001B4ABF /* Tests */,
 				961571F22E3E9D7300125E6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +103,47 @@
 				961572092E3E9D7500125E6F /* Steero-iOSUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		968CA2922E3EA491001B4ABF /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				968CA2972E3EA5EF001B4ABF /* MotionManager.swift */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		968CA2932E3EA4CD001B4ABF /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				968CA2992E3EA693001B4ABF /* BLEPeripheral.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		968CA2942E3EA4D5001B4ABF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				968CA2982E3EA679001B4ABF /* ControlPacket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		968CA2952E3EA4DA001B4ABF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				968CA2842E3EA470001B4ABF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		968CA2962E3EA53F001B4ABF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				961572022E3E9D7500125E6F /* Steero-iOSTests */,
+				9615720C2E3E9D7500125E6F /* Steero-iOSUITests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +160,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				961571F32E3E9D7300125E6F /* Steero-iOS */,
 			);
 			name = "Steero-iOS";
 			packageProductDependencies = (
@@ -212,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968CA2882E3EA470001B4ABF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968CA28A2E3EA470001B4ABF /* ContentView.swift in Sources */,
+				968CA28B2E3EA470001B4ABF /* Steero_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
