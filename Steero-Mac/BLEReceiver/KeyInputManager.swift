@@ -10,12 +10,13 @@ import CoreGraphics
 
 class KeyInputManager {
     static func process(steer: Int8, throttle: UInt8) {
-        let steerThreshold: Int8 = 30
-        let throttleThreshold: UInt8 = 30
+        let steerThreshold: Int8 = 1
+        let throttleThreshold: UInt8 = 1
 
         // Right Arrow
         if steer > steerThreshold {
             sendKey(keyCode: 124, isDown: true)
+            print("steering right")
         } else {
             sendKey(keyCode: 124, isDown: false)
         }
@@ -23,6 +24,7 @@ class KeyInputManager {
         // Left Arrow
         if steer < -steerThreshold {
             sendKey(keyCode: 123, isDown: true)
+            print("steering left")
         } else {
             sendKey(keyCode: 123, isDown: false)
         }
@@ -30,6 +32,7 @@ class KeyInputManager {
         // Up Arrow
         if throttle > throttleThreshold {
             sendKey(keyCode: 126, isDown: true)
+            print("throttling up")
         } else {
             sendKey(keyCode: 126, isDown: false)
         }
@@ -40,4 +43,5 @@ class KeyInputManager {
         event.post(tap: .cghidEventTap)
     }
 }
+
 

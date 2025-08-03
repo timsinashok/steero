@@ -47,7 +47,7 @@ class MotionManager: ObservableObject {
     /// Map pitch (-π/4 forward to 0 flat) to throttle [0, 255]
     var normalizedThrottle: Int8 {
         let forward = max(0.0, roll)
-        let scaled = min(forward / (.pi / 4), 1.0)
+        let scaled = min(forward / (.pi / 2), 1.0)
         let value = Int(round(scaled * 255))
         return Int8(clamping: value)
     }
