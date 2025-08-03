@@ -30,15 +30,15 @@ iPhone (BLE Peripheral: motion + button data)
 ## Development Plan
 
 ### Phase 1 – iPhone Sensor & BLE Prototype
-- [ ] Read roll and pitch using `CoreMotion`
-- [ ] Show live steering, throttle, brake values on screen
-- [ ] Add one on-screen button
-- [ ] Send control data over BLE as a custom service
+- [x] Read roll and pitch using `CoreMotion`
+- [x] Show live steering, throttle, brake values on screen
+- [x] Add one on-screen button
+- [x] Send control data over BLE as a custom service
 
 ### Phase 2 – Mac BLE Receiver
-- [ ] Connect to iPhone via `CoreBluetooth`
-- [ ] Receive & decode control data
-- [ ] Map to temporary keyboard input for testing
+- [x] Connect to iPhone via `CoreBluetooth`
+- [x] Receive & decode control data
+- [x] Map to temporary keyboard input for testing
 
 ### Phase 3 – Virtual Steering Device
 - [ ] Create a virtual HID steering device with `IOHIDUserDevice`
