@@ -2,9 +2,36 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Required to emulate a Bluetooth steering wheel for Steero.</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>This app broadcasts steering data over Bluetooth to your Mac.</string>
+    <key>CFBundleDisplayName</key>
+    <string>Steero-iOS</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.yourcompany.Steero-iOS</string>
+    <key>CFBundleName</key>
+    <string>Steero-iOS</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- ✅ Permissions -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>This app uses Bluetooth to send steering control data to a Mac.</string>
+    <key>NSMotionUsageDescription</key>
+    <string>This app needs motion data to control steering and throttle.</string>
 </dict>
 </plist>

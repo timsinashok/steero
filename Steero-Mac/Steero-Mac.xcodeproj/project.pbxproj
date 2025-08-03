@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		968CA2D62E3EE330001B4ABF /* Steero_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */; };
-		968CA2D82E3EE330001B4ABF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2D72E3EE330001B4ABF /* ContentView.swift */; };
 		968CA2DA2E3EE332001B4ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968CA2D92E3EE332001B4ABF /* Assets.xcassets */; };
 		968CA3102E3EF2C0001B4ABF /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */; };
 		968CA3112E3EF2C7001B4ABF /* ControlPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA30E2E3EF187001B4ABF /* ControlPacket.swift */; };
@@ -34,13 +33,13 @@
 /* Begin PBXFileReference section */
 		968CA2D22E3EE330001B4ABF /* Steero-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Steero-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steero_MacApp.swift; sourceTree = "<group>"; };
-		968CA2D72E3EE330001B4ABF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		968CA2D92E3EE332001B4ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		968CA2DB2E3EE332001B4ABF /* Steero_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steero_Mac.entitlements; sourceTree = "<group>"; };
 		968CA2E02E3EE332001B4ABF /* Steero-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steero-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CA2EA2E3EE332001B4ABF /* Steero-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steero-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CA30E2E3EF187001B4ABF /* ControlPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPacket.swift; sourceTree = "<group>"; };
 		968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		968CA31F2E3EFEDA001B4ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -58,6 +57,20 @@
 			);
 			target = 968CA2E92E3EE332001B4ABF /* Steero-MacUITests */;
 		};
+		968CA31C2E3EFBBA001B4ABF /* Exceptions for "Views" folder in "Steero-Mac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+			);
+			target = 968CA2D12E3EE330001B4ABF /* Steero-Mac */;
+		};
+		968CA31D2E3EFBBA001B4ABF /* Exceptions for "Views" folder in "Steero-MacUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+			);
+			target = 968CA2E92E3EE332001B4ABF /* Steero-MacUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -68,6 +81,15 @@
 				968CA3032E3EEF93001B4ABF /* Exceptions for "Tests" folder in "Steero-MacUITests" target */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		968CA31A2E3EFBB9001B4ABF /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				968CA31C2E3EFBBA001B4ABF /* Exceptions for "Views" folder in "Steero-Mac" target */,
+				968CA31D2E3EFBBA001B4ABF /* Exceptions for "Views" folder in "Steero-MacUITests" target */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -100,14 +122,15 @@
 		968CA2C92E3EE330001B4ABF = {
 			isa = PBXGroup;
 			children = (
-				968CA30D2E3EF172001B4ABF /* Views */,
-				968CA30C2E3EF167001B4ABF /* Models */,
+				968CA31F2E3EFEDA001B4ABF /* Info.plist */,
 				968CA30B2E3EF159001B4ABF /* BLEReceiver */,
 				968CA2D32E3EE330001B4ABF /* Products */,
-				968CA2FE2E3EEF82001B4ABF /* Tests */,
 				968CA2D92E3EE332001B4ABF /* Assets.xcassets */,
 				968CA2DB2E3EE332001B4ABF /* Steero_Mac.entitlements */,
 				968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */,
+				968CA30C2E3EF167001B4ABF /* Models */,
+				968CA31A2E3EFBB9001B4ABF /* Views */,
+				968CA2FE2E3EEF82001B4ABF /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,14 +158,6 @@
 				968CA30E2E3EF187001B4ABF /* ControlPacket.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		968CA30D2E3EF172001B4ABF /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				968CA2D72E3EE330001B4ABF /* ContentView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +217,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				968CA2FE2E3EEF82001B4ABF /* Tests */,
+				968CA31A2E3EFBB9001B4ABF /* Views */,
 			);
 			name = "Steero-MacUITests";
 			packageProductDependencies = (
@@ -284,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968CA2D82E3EE330001B4ABF /* ContentView.swift in Sources */,
 				968CA3102E3EF2C0001B4ABF /* BLEManager.swift in Sources */,
 				968CA2D62E3EE330001B4ABF /* Steero_MacApp.swift in Sources */,
 				968CA3112E3EF2C7001B4ABF /* ControlPacket.swift in Sources */,
@@ -444,12 +459,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Steero-Mac/Steero_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Steero_Mac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,12 +485,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Steero-Mac/Steero_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Steero_Mac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
