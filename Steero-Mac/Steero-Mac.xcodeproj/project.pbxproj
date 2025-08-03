@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961C804A2E3F11F1009CF415 /* KeyInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C80492E3F11EF009CF415 /* KeyInputManager.swift */; };
 		968CA2D62E3EE330001B4ABF /* Steero_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */; };
 		968CA2DA2E3EE332001B4ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968CA2D92E3EE332001B4ABF /* Assets.xcassets */; };
 		968CA3102E3EF2C0001B4ABF /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		961C80492E3F11EF009CF415 /* KeyInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputManager.swift; sourceTree = "<group>"; };
 		968CA2D22E3EE330001B4ABF /* Steero-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Steero-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steero_MacApp.swift; sourceTree = "<group>"; };
 		968CA2D92E3EE332001B4ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		968CA30B2E3EF159001B4ABF /* BLEReceiver */ = {
 			isa = PBXGroup;
 			children = (
+				961C80492E3F11EF009CF415 /* KeyInputManager.swift */,
 				968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */,
 			);
 			path = BLEReceiver;
@@ -303,6 +306,7 @@
 				968CA3102E3EF2C0001B4ABF /* BLEManager.swift in Sources */,
 				968CA2D62E3EE330001B4ABF /* Steero_MacApp.swift in Sources */,
 				968CA3112E3EF2C7001B4ABF /* ControlPacket.swift in Sources */,
+				961C804A2E3F11F1009CF415 /* KeyInputManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

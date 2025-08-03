@@ -39,14 +39,17 @@ class MotionManager: ObservableObject {
 
     /// Map roll (-π/2 to +π/2) to steering [-127, 127]
     var normalizedSteer: Int8 {
-        let scaled = max(-1.0, min(1.0, yaw / (.pi / 2)))
-        return Int8(scaled * 127)
+        let scaled = max(-1.0, min(1.0, yaw / (.pi / 2))) * -1.0
+        let value = Int(round(scaled * 127))
+        return Int8(clamping: value)
     }
 
     /// Map pitch (-π/4 forward to 0 flat) to throttle [0, 255]
     var normalizedThrottle: Int8 {
-        let forward = max(0.0, roll) // Negative pitch = forward
+        let forward = max(0.0, roll)
         let scaled = min(forward / (.pi / 4), 1.0)
-        return Int8(scaled * 255)
+        let value = Int(round(scaled * 255))
+        return Int8(clamping: value)
     }
+
 }

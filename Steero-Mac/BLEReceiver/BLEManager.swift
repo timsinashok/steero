@@ -287,6 +287,7 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
             buttons = data[3]
 
             print("📥 Received: steer=\(steer), throttle=\(throttle), brake=\(brake), buttons=\(buttons)")
+            KeyInputManager.process(steer: steer, throttle: throttle)
         }
     }
 }
