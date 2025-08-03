@@ -1,6 +1,7 @@
 .DS_Store
 Steero-iOS/.DS_Store
 Steero-macOS/.DS_Store
+Steero-Mac/.DS_Store
 
 # Xcode
 build/

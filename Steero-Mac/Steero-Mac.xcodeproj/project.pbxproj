@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		968CA2D62E3EE330001B4ABF /* Steero_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */; };
+		968CA2D82E3EE330001B4ABF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2D72E3EE330001B4ABF /* ContentView.swift */; };
+		968CA2DA2E3EE332001B4ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968CA2D92E3EE332001B4ABF /* Assets.xcassets */; };
+		968CA3102E3EF2C0001B4ABF /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */; };
+		968CA3112E3EF2C7001B4ABF /* ControlPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA30E2E3EF187001B4ABF /* ControlPacket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		968CA2E12E3EE332001B4ABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 968CA2CA2E3EE330001B4ABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 968CA2D12E3EE330001B4ABF;
+			remoteInfo = "Steero-Mac";
+		};
+		968CA2EB2E3EE332001B4ABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 968CA2CA2E3EE330001B4ABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 968CA2D12E3EE330001B4ABF;
+			remoteInfo = "Steero-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		968CA2D22E3EE330001B4ABF /* Steero-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Steero-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steero_MacApp.swift; sourceTree = "<group>"; };
+		968CA2D72E3EE330001B4ABF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		968CA2D92E3EE332001B4ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		968CA2DB2E3EE332001B4ABF /* Steero_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steero_Mac.entitlements; sourceTree = "<group>"; };
+		968CA2E02E3EE332001B4ABF /* Steero-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steero-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		968CA2EA2E3EE332001B4ABF /* Steero-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Steero-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		968CA30E2E3EF187001B4ABF /* ControlPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPacket.swift; sourceTree = "<group>"; };
+		968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		968CA3022E3EEF93001B4ABF /* Exceptions for "Tests" folder in "Steero-MacTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Steero-MacTests/Steero_MacTests.swift",
+			);
+			target = 968CA2DF2E3EE332001B4ABF /* Steero-MacTests */;
+		};
+		968CA3032E3EEF93001B4ABF /* Exceptions for "Tests" folder in "Steero-MacUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Steero-MacTests/Steero_MacTests.swift",
+			);
+			target = 968CA2E92E3EE332001B4ABF /* Steero-MacUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		968CA2FE2E3EEF82001B4ABF /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				968CA3022E3EEF93001B4ABF /* Exceptions for "Tests" folder in "Steero-MacTests" target */,
+				968CA3032E3EEF93001B4ABF /* Exceptions for "Tests" folder in "Steero-MacUITests" target */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		968CA2CF2E3EE330001B4ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968CA2DD2E3EE332001B4ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968CA2E72E3EE332001B4ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		968CA2C92E3EE330001B4ABF = {
+			isa = PBXGroup;
+			children = (
+				968CA30D2E3EF172001B4ABF /* Views */,
+				968CA30C2E3EF167001B4ABF /* Models */,
+				968CA30B2E3EF159001B4ABF /* BLEReceiver */,
+				968CA2D32E3EE330001B4ABF /* Products */,
+				968CA2FE2E3EEF82001B4ABF /* Tests */,
+				968CA2D92E3EE332001B4ABF /* Assets.xcassets */,
+				968CA2DB2E3EE332001B4ABF /* Steero_Mac.entitlements */,
+				968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		968CA2D32E3EE330001B4ABF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				968CA2D22E3EE330001B4ABF /* Steero-Mac.app */,
+				968CA2E02E3EE332001B4ABF /* Steero-MacTests.xctest */,
+				968CA2EA2E3EE332001B4ABF /* Steero-MacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		968CA30B2E3EF159001B4ABF /* BLEReceiver */ = {
+			isa = PBXGroup;
+			children = (
+				968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */,
+			);
+			path = BLEReceiver;
+			sourceTree = "<group>";
+		};
+		968CA30C2E3EF167001B4ABF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				968CA30E2E3EF187001B4ABF /* ControlPacket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		968CA30D2E3EF172001B4ABF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				968CA2D72E3EE330001B4ABF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		968CA2D12E3EE330001B4ABF /* Steero-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 968CA2F42E3EE332001B4ABF /* Build configuration list for PBXNativeTarget "Steero-Mac" */;
+			buildPhases = (
+				968CA2CE2E3EE330001B4ABF /* Sources */,
+				968CA2CF2E3EE330001B4ABF /* Frameworks */,
+				968CA2D02E3EE330001B4ABF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Steero-Mac";
+			packageProductDependencies = (
+			);
+			productName = "Steero-Mac";
+			productReference = 968CA2D22E3EE330001B4ABF /* Steero-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		968CA2DF2E3EE332001B4ABF /* Steero-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 968CA2F72E3EE332001B4ABF /* Build configuration list for PBXNativeTarget "Steero-MacTests" */;
+			buildPhases = (
+				968CA2DC2E3EE332001B4ABF /* Sources */,
+				968CA2DD2E3EE332001B4ABF /* Frameworks */,
+				968CA2DE2E3EE332001B4ABF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				968CA2E22E3EE332001B4ABF /* PBXTargetDependency */,
+			);
+			name = "Steero-MacTests";
+			packageProductDependencies = (
+			);
+			productName = "Steero-MacTests";
+			productReference = 968CA2E02E3EE332001B4ABF /* Steero-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		968CA2E92E3EE332001B4ABF /* Steero-MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 968CA2FA2E3EE332001B4ABF /* Build configuration list for PBXNativeTarget "Steero-MacUITests" */;
+			buildPhases = (
+				968CA2E62E3EE332001B4ABF /* Sources */,
+				968CA2E72E3EE332001B4ABF /* Frameworks */,
+				968CA2E82E3EE332001B4ABF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				968CA2EC2E3EE332001B4ABF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				968CA2FE2E3EEF82001B4ABF /* Tests */,
+			);
+			name = "Steero-MacUITests";
+			packageProductDependencies = (
+			);
+			productName = "Steero-MacUITests";
+			productReference = 968CA2EA2E3EE332001B4ABF /* Steero-MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		968CA2CA2E3EE330001B4ABF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					968CA2D12E3EE330001B4ABF = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					968CA2DF2E3EE332001B4ABF = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 968CA2D12E3EE330001B4ABF;
+					};
+					968CA2E92E3EE332001B4ABF = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 968CA2D12E3EE330001B4ABF;
+					};
+				};
+			};
+			buildConfigurationList = 968CA2CD2E3EE330001B4ABF /* Build configuration list for PBXProject "Steero-Mac" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 968CA2C92E3EE330001B4ABF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 968CA2D32E3EE330001B4ABF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				968CA2D12E3EE330001B4ABF /* Steero-Mac */,
+				968CA2DF2E3EE332001B4ABF /* Steero-MacTests */,
+				968CA2E92E3EE332001B4ABF /* Steero-MacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		968CA2D02E3EE330001B4ABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968CA2DA2E3EE332001B4ABF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968CA2DE2E3EE332001B4ABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968CA2E82E3EE332001B4ABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		968CA2CE2E3EE330001B4ABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968CA2D82E3EE330001B4ABF /* ContentView.swift in Sources */,
+				968CA3102E3EF2C0001B4ABF /* BLEManager.swift in Sources */,
+				968CA2D62E3EE330001B4ABF /* Steero_MacApp.swift in Sources */,
+				968CA3112E3EF2C7001B4ABF /* ControlPacket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968CA2DC2E3EE332001B4ABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		968CA2E62E3EE332001B4ABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		968CA2E22E3EE332001B4ABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 968CA2D12E3EE330001B4ABF /* Steero-Mac */;
+			targetProxy = 968CA2E12E3EE332001B4ABF /* PBXContainerItemProxy */;
+		};
+		968CA2EC2E3EE332001B4ABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 968CA2D12E3EE330001B4ABF /* Steero-Mac */;
+			targetProxy = 968CA2EB2E3EE332001B4ABF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		968CA2F22E3EE332001B4ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		968CA2F32E3EE332001B4ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		968CA2F52E3EE332001B4ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Steero-Mac/Steero_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ashok.Steero-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		968CA2F62E3EE332001B4ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Steero-Mac/Steero_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ashok.Steero-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		968CA2F82E3EE332001B4ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ashok.Steero-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steero-Mac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steero-Mac";
+			};
+			name = Debug;
+		};
+		968CA2F92E3EE332001B4ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ashok.Steero-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steero-Mac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Steero-Mac";
+			};
+			name = Release;
+		};
+		968CA2FB2E3EE332001B4ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ashok.Steero-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Steero-Mac";
+			};
+			name = Debug;
+		};
+		968CA2FC2E3EE332001B4ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ashok.Steero-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Steero-Mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		968CA2CD2E3EE330001B4ABF /* Build configuration list for PBXProject "Steero-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968CA2F22E3EE332001B4ABF /* Debug */,
+				968CA2F32E3EE332001B4ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		968CA2F42E3EE332001B4ABF /* Build configuration list for PBXNativeTarget "Steero-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968CA2F52E3EE332001B4ABF /* Debug */,
+				968CA2F62E3EE332001B4ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		968CA2F72E3EE332001B4ABF /* Build configuration list for PBXNativeTarget "Steero-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968CA2F82E3EE332001B4ABF /* Debug */,
+				968CA2F92E3EE332001B4ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		968CA2FA2E3EE332001B4ABF /* Build configuration list for PBXNativeTarget "Steero-MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968CA2FB2E3EE332001B4ABF /* Debug */,
+				968CA2FC2E3EE332001B4ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 968CA2CA2E3EE330001B4ABF /* Project object */;
+}

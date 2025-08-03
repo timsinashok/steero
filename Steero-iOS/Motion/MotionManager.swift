@@ -5,6 +5,7 @@
 //  Created by Ashok Timsina on 8/2/25.
 //
 
+
 import Foundation
 import CoreMotion
 import Combine
@@ -15,6 +16,7 @@ class MotionManager: ObservableObject {
 
     @Published var roll: Double = 0
     @Published var pitch: Double = 0
+    @Published var yaw: Double = 0
 
     func startUpdates() {
         motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
@@ -27,6 +29,7 @@ class MotionManager: ObservableObject {
 
             self.roll = attitude.roll
             self.pitch = attitude.pitch
+            self.yaw = attitude.yaw
         }
     }
 
@@ -34,21 +37,16 @@ class MotionManager: ObservableObject {
         referenceAttitude = motionManager.deviceMotion?.attitude
     }
 
-    // Normalized values for BLE packet
+    /// Map roll (-π/2 to +π/2) to steering [-127, 127]
     var normalizedSteer: Int8 {
-        let scaled = max(-1.0, min(1.0, roll / (.pi / 2))) // -1 to +1 range
+        let scaled = max(-1.0, min(1.0, yaw / (.pi / 2)))
         return Int8(scaled * 127)
     }
 
-    var normalizedThrottle: UInt8 {
-        let forward = max(0.0, -pitch) // negative pitch = forward
+    /// Map pitch (-π/4 forward to 0 flat) to throttle [0, 255]
+    var normalizedThrottle: Int8 {
+        let forward = max(0.0, roll) // Negative pitch = forward
         let scaled = min(forward / (.pi / 4), 1.0)
-        return UInt8(scaled * 255)
-    }
-
-    var normalizedBrake: UInt8 {
-        let backward = max(0.0, pitch) // positive pitch = backward
-        let scaled = min(backward / (.pi / 4), 1.0)
-        return UInt8(scaled * 255)
+        return Int8(scaled * 255)
     }
 }

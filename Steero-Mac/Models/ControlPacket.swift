@@ -1,9 +1,10 @@
 //
 //  ControlPacket.swift
-//  Steero-iOS
+//  Steero-Mac
 //
 //  Created by Ashok Timsina on 8/2/25.
 //
+
 
 import Foundation
 
