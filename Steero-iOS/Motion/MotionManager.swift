@@ -19,7 +19,7 @@ class MotionManager: ObservableObject {
     @Published var yaw: Double = 0
 
     func startUpdates() {
-        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
+        motionManager.deviceMotionUpdateInterval = 1.0 / 30.0
         motionManager.startDeviceMotionUpdates(to: .main) { [weak self] motion, _ in
             guard let self = self, let attitude = motion?.attitude else { return }
 
