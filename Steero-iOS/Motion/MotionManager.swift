@@ -5,7 +5,6 @@
 //  Created by Ashok Timsina on 8/2/25.
 //
 
-
 import Foundation
 import CoreMotion
 import Combine
