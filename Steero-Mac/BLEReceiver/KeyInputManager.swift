@@ -9,9 +9,10 @@ import Foundation
 import CoreGraphics
 
 class KeyInputManager {
-    static func process(steer: Int8, throttle: UInt8) {
+    static func process(steer: Int8, throttle: UInt8, brake: UInt8) {
         let steerThreshold: Int8 = 1
         let throttleThreshold: UInt8 = 1
+        let brakeThreshold: UInt8 = 0 // any nonzero brake engages
 
         // Right Arrow
         if steer > steerThreshold {
@@ -29,12 +30,20 @@ class KeyInputManager {
             sendKey(keyCode: 123, isDown: false)
         }
 
-        // Up Arrow
+        // Up Arrow (throttle)
         if throttle > throttleThreshold {
             sendKey(keyCode: 126, isDown: true)
             print("throttling up")
         } else {
             sendKey(keyCode: 126, isDown: false)
+        }
+
+        // Brake: example mapping to 'B' key (keyCode 11)
+        if brake > brakeThreshold {
+            sendKey(keyCode: 11, isDown: true)
+            print("braking with value \(brake)")
+        } else {
+            sendKey(keyCode: 11, isDown: false)
         }
     }
 
@@ -43,5 +52,3 @@ class KeyInputManager {
         event.post(tap: .cghidEventTap)
     }
 }
-
-

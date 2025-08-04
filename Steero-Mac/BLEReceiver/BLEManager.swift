@@ -95,18 +95,18 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
     }
 
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
-        guard let data = characteristic.value else { return }
+            guard let data = characteristic.value else { return }
 
-        // Expected format: 5 bytes [Int8, UInt8, UInt8, UInt8, UInt8]
-        if data.count >= 4 {
-            steer = Int8(bitPattern: data[0])
-            throttle = data[1]
-            brake = data[2]
-            buttons = data[3]
+            // Expected format: 4 bytes [Int8 steer, Int8 throttle, UInt8 brake, UInt8 buttons]
+            if data.count >= 4 {
+                steer = Int8(bitPattern: data[0])
+                throttle = data[1]
+                brake = data[2]
+                buttons = data[3]
 
-            print("📥 Received: steer=\(steer), throttle=\(throttle), brake=\(brake), buttons=\(buttons)")
-            print("Executing the received signal...")
-            KeyInputManager.process(steer: steer, throttle: throttle)
+                print("📥 Received: steer=\(steer), throttle=\(throttle), brake=\(brake), buttons=\(buttons)")
+                print("Executing the received signal...")
+                KeyInputManager.process(steer: steer, throttle: throttle, brake: brake)
+            }
         }
-    }
 }
