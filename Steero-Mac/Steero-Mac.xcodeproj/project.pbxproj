@@ -76,6 +76,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		961C804B2E4069B8009CF415 /* HIDManager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HIDManager;
+			sourceTree = "<group>";
+		};
 		968CA2FE2E3EEF82001B4ABF /* Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -124,6 +129,7 @@
 		968CA2C92E3EE330001B4ABF = {
 			isa = PBXGroup;
 			children = (
+				961C804B2E4069B8009CF415 /* HIDManager */,
 				968CA31F2E3EFEDA001B4ABF /* Info.plist */,
 				968CA30B2E3EF159001B4ABF /* BLEReceiver */,
 				968CA2D32E3EE330001B4ABF /* Products */,
@@ -177,6 +183,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				961C804B2E4069B8009CF415 /* HIDManager */,
 			);
 			name = "Steero-Mac";
 			packageProductDependencies = (
