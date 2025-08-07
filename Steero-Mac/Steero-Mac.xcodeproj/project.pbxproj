@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		961C804A2E3F11F1009CF415 /* KeyInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C80492E3F11EF009CF415 /* KeyInputManager.swift */; };
+		961C80702E4475E7009CF415 /* CoreHID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C806F2E4475E7009CF415 /* CoreHID.framework */; };
 		968CA2D62E3EE330001B4ABF /* Steero_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */; };
 		968CA2DA2E3EE332001B4ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968CA2D92E3EE332001B4ABF /* Assets.xcassets */; };
 		968CA3102E3EF2C0001B4ABF /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968CA30F2E3EF1F1001B4ABF /* BLEManager.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		961C80492E3F11EF009CF415 /* KeyInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputManager.swift; sourceTree = "<group>"; };
+		961C806F2E4475E7009CF415 /* CoreHID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHID.framework; path = System/Library/Frameworks/CoreHID.framework; sourceTree = SDKROOT; };
 		968CA2D22E3EE330001B4ABF /* Steero-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Steero-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CA2D52E3EE330001B4ABF /* Steero_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steero_MacApp.swift; sourceTree = "<group>"; };
 		968CA2D92E3EE332001B4ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961C80702E4475E7009CF415 /* CoreHID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961C806E2E4475E6009CF415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				961C806F2E4475E7009CF415 /* CoreHID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		968CA2C92E3EE330001B4ABF = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +150,7 @@
 				968CA30C2E3EF167001B4ABF /* Models */,
 				968CA31A2E3EFBB9001B4ABF /* Views */,
 				968CA2FE2E3EEF82001B4ABF /* Tests */,
+				961C806E2E4475E6009CF415 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
