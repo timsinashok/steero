@@ -18,7 +18,7 @@ Using the phone’s gyroscope and Bluetooth Low Energy (BLE), it transmits your 
 ## How It Works
 ```
 
-iPhone (BLE Peripheral: motion + button data)
+▶ iPhone (BLE Peripheral: motion + button data)
 ▶ Mac (BLE Central: receives data)
 ▶ Virtual steering device (HID)
 ▶ Racing game
@@ -41,8 +41,8 @@ iPhone (BLE Peripheral: motion + button data)
 - [x] Map to temporary keyboard input for testing
 
 ### Phase 3 – Virtual Steering Device
-- [ ] Create a virtual HID steering device with `IOHIDUserDevice`
-- [ ] Feed steering and pedal values into HID reports
+- [x] Create a virtual HID steering device with `IOHIDUserDevice`
+- [x] Feed steering and pedal values into HID reports
 - [ ] Test in racing games for auto-detection
 
 ### Phase 4 – Calibration & UX
