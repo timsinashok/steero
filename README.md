@@ -40,9 +40,11 @@ Using the phone’s gyroscope and Bluetooth Low Energy (BLE), it transmits your 
 - [x] Receive & decode control data
 - [x] Map to temporary keyboard input for testing
 
+<font color="red">Stalled after Phase 2 because of the Apple's regulations. So apparantly I have to pay $99 to enroll into apple developer program and request them to use Virtual HID Device. Crazy!</font>
+
 ### Phase 3 – Virtual Steering Device
-- [x] Create a virtual HID steering device with `IOHIDUserDevice`
-- [x] Feed steering and pedal values into HID reports
+- [ ] Create a virtual HID steering device with `IOHIDUserDevice`
+- [ ] Feed steering and pedal values into HID reports
 - [ ] Test in racing games for auto-detection
 
 ### Phase 4 – Calibration & UX
